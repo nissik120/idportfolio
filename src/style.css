@@ -1,0 +1,111 @@
+/* 
+
+COLOR PALETTE 
+
+White           #FFFFFF
+Elm             #1D7A85
+Cod Gray        #191919
+Bambay          #AEAEAF
+
+*/
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button{
+    display: block;
+    height: 35px;
+    background: #1D7A85;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 35px;
+    width: 150px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 100px;
+}
+
+ul{
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+
+section{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HERO SECTION */
+
+/* .hero{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.hero-section{
+    
+}
+
+.hero-image{
+    width: 100px;
+    height: auto;
+} */
+
+
+/* FOOTER */
+
+footer{
+    border-top: 1px solid #AEAEAF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer ul{
+    flex-direction: row;
+    gap:1rem;
+}
+
+footer li{
+    list-style: none;
+    margin: 0 25px;
+}
