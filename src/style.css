@@ -9,29 +9,54 @@ Bambay          #AEAEAF
 
 */
 
-
+@import url('https://fonts.cdnfonts.com/css/satoshi');
 
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Satoshi", sans-serif;
 }
 
-.container {
+body{
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    padding-bottom: 2rem;    
+}
+
+/* .container {
     width: 1200px;
     max-width: 90%;
     margin: 0 auto;
     padding: 50px 0;
-}
+} */
 
 a{
     text-decoration: none;
+    color: #AEAEAF;
 }
 
+a.active{
+    color: #1D7A85;
+    font-weight: bold;
+}
+
+p{
+    width: 90%;
+    padding-block: 1rem;
+}
+
+
 .button{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 35px;
     background: #1D7A85;
     padding: 10px;
@@ -41,6 +66,7 @@ a{
     font-weight: bold;
     line-height: 35px;
     width: 150px;
+    margin-block: 10px;
 }
 
 nav{
@@ -65,19 +91,21 @@ nav li {
 
 
 section{
-    display: flex;
-    gap: 1em;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding-block: 6rem;
+    padding-inline: 3rem;
+    height: minmax(300px, 600px);
 }
 
 /* HERO SECTION */
 
-/* .hero{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
+.hero{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
 }
 
 .hero-section{
@@ -87,17 +115,18 @@ section{
 .hero-image{
     width: 100px;
     height: auto;
-} */
-
+}
 
 /* FOOTER */
 
 footer{
-    border-top: 1px solid #AEAEAF;
+    /* border-top: 1px solid #AEAEAF; */
+    box-shadow: 1px 1px 2px 2px #555;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+    width: 100%;
 }
 
 footer ul{
