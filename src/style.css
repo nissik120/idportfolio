@@ -26,8 +26,8 @@ body{
     align-items: center;
 }
 
-h1{
-    padding-bottom: 2rem;    
+h1, h2{
+    padding-block: 2rem;    
 }
 
 /* .container {
@@ -98,6 +98,10 @@ section{
     height: minmax(300px, 600px);
 }
 
+.wrapper{
+    padding: 2rem;
+}
+
 /* HERO SECTION */
 
 .hero{
@@ -108,13 +112,21 @@ section{
     align-items: center;
 }
 
-.hero-section{
-    
+.hero-section h1{
+    color: #1D7A85;
 }
 
 .hero-image{
     width: 100px;
     height: auto;
+}
+
+.project{
+    background: #AEAEAF;
+}
+
+.project h1{
+    color: white;
 }
 
 /* FOOTER */
@@ -137,4 +149,72 @@ footer ul{
 footer li{
     list-style: none;
     margin: 0 25px;
+}
+
+/* CONTACT */
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+form{
+    padding: 2rem;
+    width: min(60rem, 90%);
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border: 0.1rem solid #AEAEAF;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    margin-top: 0.6rem;
+    margin-bottom: 1.6rem;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background: #AEAEAF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #191919;
+    font-weight: bold;
+    border: none;
+
+}
+  
+input[type=submit]:hover {
+    /* background-color: #45a049; */
+    background-color: #1D7A85;
+    color: white;
+}
+
+.social-wrap{
+    justify-content: center;
+    align-items: center;
+    padding-block: 2rem;
+}
+
+.cpico{
+    font-size: 3rem;
+}
+
+.cpico:hover{
+    color: #1D7A85;
+}
+
+
+/* FEATURED PROJECT */
+
+.media-view{
+    background-color: #AEAEAF;
+    width: 200px;
+    height: 150px;
+}
+
+.project-problem{
+    background-color: #1D7A85;
+    color: #FFFFFF;
 }
