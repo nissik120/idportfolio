@@ -190,20 +190,29 @@ input[type=submit]:hover {
 
 /* FEATURED PROJECT */
 
+.wrapper{
+    padding:5px;
+}
+
 .portfolio-project-header{
     text-align: center;
 }
 
 .media-view{
-    background-color: #AEAEAF;
-    width: 200px;
-    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-image-placeholder{
+    width:100%; 
+    max-width: 400px;  
+    height: auto;
 }
 
 .project-problem{
     background-color: #1D7A85;
     color: #FFFFFF;
-    padding:10px;
 }
 
 .project-solution{
