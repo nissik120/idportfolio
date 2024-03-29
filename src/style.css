@@ -95,6 +95,9 @@ section{
     height: minmax(300px, 600px);
 }
 
+.vert-padding{
+    padding-block: 2rem;
+}
 
 
 /* HERO SECTION */
